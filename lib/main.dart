@@ -96,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               Padding(
                                 padding: EdgeInsets.symmetric(vertical: 10),
                                 child: Image.asset(
-                                  'asset/Add_Item.png',
+                                  'asset/Remove_Item.png',
                                   height: 100,
                                   width: double.infinity,
                                 ),
