@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:thoga_kade/components/Heading.dart';
 import 'package:thoga_kade/pages/AddItem.dart';
 
 void main() {
@@ -31,16 +32,14 @@ class MyHomePage extends StatefulWidget {
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
+
 }
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.green,
-        title: Center(child: Text(widget.title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),)),
-      ),
+      appBar: Heading().create(),
       body: Container(
           child: CustomScrollView(
             primary: false,
@@ -57,12 +56,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(builder: (context) => AddItem()));
-
                       },
                       child: Container(
                         padding: EdgeInsets.all(8),
                         color: Colors.green[100],
-                        child: Text('Heed not the rabble'),
+                        child: Text('Add Item'),
                       ),
                     ),
                     GestureDetector(
@@ -111,23 +109,23 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           )
         ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            backgroundColor: Colors.green,
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Browser',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Account',
-          ),
-        ],
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      // bottomNavigationBar: BottomNavigationBar(
+      //   items: [
+      //     BottomNavigationBarItem(
+      //       backgroundColor: Colors.green,
+      //       icon: Icon(Icons.home),
+      //       label: 'Home',
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.search),
+      //       label: 'Browser',
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.person),
+      //       label: 'Account',
+      //     ),
+      //   ],
+      // ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

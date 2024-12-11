@@ -1,0 +1,3 @@
+enum ModelType{
+   ITEM,ORDER
+}
