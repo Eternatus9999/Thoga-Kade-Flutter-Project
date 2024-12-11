@@ -60,47 +60,130 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Container(
                         padding: EdgeInsets.all(8),
                         color: Colors.green[100],
-                        child: Text('Add Item'),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                              child: Text('Add Item',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),),
+                            ),
+                            Padding(
+                                padding: EdgeInsets.symmetric(vertical: 10),
+                                child: Image.asset(
+                                  'asset/Add_Item.png',
+                                  height: 100,
+                                  width: double.infinity,
+                                ),
+                            )
+                          ],
+                        )
                       ),
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('Container 1 clicked');
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => AddItem()));
                       },
                       child: Container(
-                        padding: EdgeInsets.all(8),
-                        color: Colors.green[100],
-                        child: Text('Heed not the rabble'),
+                          padding: EdgeInsets.all(8),
+                          color: Colors.green[100],
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                                child: Text('Remove Item',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(vertical: 10),
+                                child: Image.asset(
+                                  'asset/Add_Item.png',
+                                  height: 100,
+                                  width: double.infinity,
+                                ),
+                              )
+                            ],
+                          )
                       ),
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('Container 1 clicked');
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => AddItem()));
                       },
                       child: Container(
                         padding: EdgeInsets.all(8),
                         color: Colors.green[100],
-                        child: Text('Heed not the rabble'),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                              child: Text('View Item',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),),
+                            ),
+                            Padding(
+                                padding: EdgeInsets.symmetric(vertical: 10),
+                                child: Image.asset(
+                                  'asset/Order_List.png',
+                                  height: 100,
+                                  width: double.infinity,
+                                ),
+                            )
+                          ],
+                        )
                       ),
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('Container 1 clicked');
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => AddItem()));
                       },
                       child: Container(
                         padding: EdgeInsets.all(8),
                         color: Colors.green[100],
-                        child: Text('Heed not the rabble'),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                              child: Text('Add Order',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),),
+                            ),
+                            Padding(
+                                padding: EdgeInsets.symmetric(vertical: 10),
+                                child: Image.asset(
+                                  'asset/Order.png',
+                                  height: 100,
+                                  width: double.infinity,
+                                ),
+                            )
+                          ],
+                        )
                       ),
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('Container 1 clicked');
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => AddItem()));
                       },
                       child: Container(
                         padding: EdgeInsets.all(8),
                         color: Colors.green[100],
-                        child: Text('Heed not the rabble'),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                              child: Text('View Order',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),),
+                            ),
+                            Padding(
+                                padding: EdgeInsets.symmetric(vertical: 10),
+                                child: Image.asset(
+                                  'asset/Cart.png',
+                                  height: 100,
+                                  width: double.infinity,
+                                ),
+                            )
+                          ],
+                        )
                       ),
                     ),
                   ],
@@ -109,23 +192,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           )
         ),
-      // bottomNavigationBar: BottomNavigationBar(
-      //   items: [
-      //     BottomNavigationBarItem(
-      //       backgroundColor: Colors.green,
-      //       icon: Icon(Icons.home),
-      //       label: 'Home',
-      //     ),
-      //     BottomNavigationBarItem(
-      //       icon: Icon(Icons.search),
-      //       label: 'Browser',
-      //     ),
-      //     BottomNavigationBarItem(
-      //       icon: Icon(Icons.person),
-      //       label: 'Account',
-      //     ),
-      //   ],
-      // ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
