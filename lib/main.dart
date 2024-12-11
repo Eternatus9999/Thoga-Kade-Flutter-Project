@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:thoga_kade/pages/AddItem.dart';
 
 void main() {
   runApp(const MyApp());
@@ -51,35 +52,58 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisSpacing: 30,
                   crossAxisCount: 2,
                   children: <Widget>[
-                    Container(
-                      padding:  EdgeInsets.all(8),
-                      color: Colors.green[100],
-                      child:  Text("He'd have you all unravel at the"),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => AddItem()));
+
+                      },
+                      child: Container(
+                        padding: EdgeInsets.all(8),
+                        color: Colors.green[100],
+                        child: Text('Heed not the rabble'),
+                      ),
                     ),
-                    Container(
-                      padding:  EdgeInsets.all(8),
-                      color: Colors.green[200],
-                      child:  Text('Heed not the rabble'),
+                    GestureDetector(
+                      onTap: () {
+                        print('Container 1 clicked');
+                      },
+                      child: Container(
+                        padding: EdgeInsets.all(8),
+                        color: Colors.green[100],
+                        child: Text('Heed not the rabble'),
+                      ),
                     ),
-                    Container(
-                      padding:  EdgeInsets.all(8),
-                      color: Colors.green[300],
-                      child:  Text('Sound of screams but the'),
+                    GestureDetector(
+                      onTap: () {
+                        print('Container 1 clicked');
+                      },
+                      child: Container(
+                        padding: EdgeInsets.all(8),
+                        color: Colors.green[100],
+                        child: Text('Heed not the rabble'),
+                      ),
                     ),
-                    Container(
-                      padding:  EdgeInsets.all(8),
-                      color: Colors.green[400],
-                      child:  Text('Who scream'),
+                    GestureDetector(
+                      onTap: () {
+                        print('Container 1 clicked');
+                      },
+                      child: Container(
+                        padding: EdgeInsets.all(8),
+                        color: Colors.green[100],
+                        child: Text('Heed not the rabble'),
+                      ),
                     ),
-                    Container(
-                      padding:  EdgeInsets.all(8),
-                      color: Colors.green[500],
-                      child:  Text('Revolution is coming...'),
-                    ),
-                    Container(
-                      padding:  EdgeInsets.all(8),
-                      color: Colors.green[600],
-                      child:  Text('Revolution, they...'),
+                    GestureDetector(
+                      onTap: () {
+                        print('Container 1 clicked');
+                      },
+                      child: Container(
+                        padding: EdgeInsets.all(8),
+                        color: Colors.green[100],
+                        child: Text('Heed not the rabble'),
+                      ),
                     ),
                   ],
                 ),
