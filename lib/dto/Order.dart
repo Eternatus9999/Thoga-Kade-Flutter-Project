@@ -1,8 +1,8 @@
 class Order{
-  final String id;
-  final String item;
-  final double qty;
-  final double totalPrice;
+   String id;
+   String item;
+   double qty;
+   double totalPrice;
 
   Order(this.id, this.item, this.qty, this.totalPrice);
 
